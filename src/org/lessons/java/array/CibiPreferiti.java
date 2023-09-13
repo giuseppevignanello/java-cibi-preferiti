@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class CibiPreferiti {
 	public static void main(String[] args) {
-		String[] favoriteFoods = {"Pizza", "Pasta", "Hamburger", "Sushi", "Bistecca", "Patatine Fritte"};
+		String[] favoriteFoods = {"Pizza", "Pasta", "Hamburger", "Sushi", "Bistecca", "Patatine Fritte", "Prova"};
 		
 		System.out.println("Your have " + favoriteFoods.length + " favorite foods");
 		System.out.println("Your favorite food is " + favoriteFoods[0]);
@@ -19,7 +19,8 @@ public class CibiPreferiti {
 		//odd scenario
 		} else {
 			//select the food with the index == to half of the favoriteFood.lenght rounded up 
-			String middleRankOdd = favoriteFoods[(int) Math.ceil(favoriteFoods.length / 2)];
+			String middleRankOdd = favoriteFoods[favoriteFoods.length / 2];
+			System.out.println(favoriteFoods.length / 2);
 			System.out.println("Your average favorite food is " + middleRankOdd);
 		}
 	}
